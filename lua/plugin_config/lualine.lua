@@ -1,29 +1,23 @@
 require('lualine').setup {
   options = {
     theme = 'tokyonight',
+	section_separators = { left = '', right = ''},
 	component_separators = '|',
-    section_separators = { left = '', right = '' },
   },
   sections = {
-    lualine_a = {
-      { 'filename', separator = { left = '', right = '' }, right_padding = 2 },
-    },
-    lualine_b = {},
-    lualine_c = {'branch'},
-    lualine_x = {},
-    lualine_y = {},
-    lualine_z = {
-      { 'location', separator = { right = '', left = '' }, left_padding = 2 },
-    },
-  },
-  inactive_sections = {
-    lualine_a = { 'filename' },
-    lualine_b = {},
+    lualine_a = {'filename'},
+    lualine_b = {'branch'},
     lualine_c = {},
     lualine_x = {},
-    lualine_y = {},
-    lualine_z = { 'location' },
+    lualine_y = {'diff'},
+    lualine_z = {'location'}
   },
-  tabline = {},
-  extensions = {},
+  inactive_sections = {
+    lualine_a = {},
+    lualine_b = {},
+    lualine_c = {'filename'},
+    lualine_x = {'location'},
+    lualine_y = {},
+    lualine_z = {}
+  },
 }
