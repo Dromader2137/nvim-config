@@ -33,4 +33,14 @@ cmp.setup({
   })
 })
 
+require('lspconfig').lua_ls.setup({
+	settings = {
+		Lua = {
+			diagnostics = {
+				globals = { 'vim' }
+			}
+		}
+	}
+})
+
 require("luasnip.loaders.from_vscode").lazy_load()

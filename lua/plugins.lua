@@ -9,7 +9,8 @@ return require('packer').startup(function(use)
 		'nvim-telescope/telescope.nvim', tag = '0.1.4',
 		requires = { {'nvim-lua/plenary.nvim'} }
 	}
-
+	
+	use "ellisonleao/gruvbox.nvim"
 	use 'folke/tokyonight.nvim'
 	
 	use {
@@ -35,4 +36,13 @@ return require('packer').startup(function(use)
 	}
 
 	use 'nvim-lualine/lualine.nvim'
+
+	use 'mbbill/undotree'
+
+	use({
+		"kdheepak/lazygit.nvim",
+		requires = {
+			"nvim-lua/plenary.nvim",
+		},
+	})
 end)
