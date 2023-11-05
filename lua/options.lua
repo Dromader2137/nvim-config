@@ -16,4 +16,4 @@ vim.opt.showcmd = true
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 
-vim.cmd[[colorscheme tokyonight-night]]
+vim.cmd[[colorscheme gruvbox]]
