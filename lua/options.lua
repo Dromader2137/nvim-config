@@ -17,3 +17,4 @@ vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 
 vim.cmd[[colorscheme gruvbox]]
+vim.cmd[[set signcolumn=no]]
