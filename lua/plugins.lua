@@ -49,4 +49,7 @@ return require('packer').startup(function(use)
 	use {
 		'numToStr/Comment.nvim',
 	}
+
+	use "folke/trouble.nvim"
+	use "nvim-tree/nvim-web-devicons"
 end)
