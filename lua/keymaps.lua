@@ -1,2 +1,3 @@
 vim.keymap.set('n', '<leader>e', ':Ex<CR>')
-vim.keymap.set('n', '<leader>t', ':TroubleToggle<CR>')
+vim.keymap.set('n', '<leader>t', ':! ./test.sh<CR>')
+vim.keymap.set('n', '<leader>d', ':TroubleToggle<CR>')
