@@ -39,12 +39,7 @@ return require('packer').startup(function(use)
 
 	use 'mbbill/undotree'
 
-	use({
-		"kdheepak/lazygit.nvim",
-		requires = {
-			"nvim-lua/plenary.nvim",
-		},
-	})
+	use 'brneor/gitui.nvim'
 
 	use {
 		'numToStr/Comment.nvim',
